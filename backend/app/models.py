@@ -216,3 +216,36 @@ class ShoppingItem(Base):
             f"<ShoppingItem id={self.id} name={self.name!r} "
             f"purchased={self.is_purchased}>"
         )
+
+
+# ---------------------------------------------------------------------------
+# Study Hub — Módulo de Estudos
+# ---------------------------------------------------------------------------
+
+class StudyMaterial(Base):
+    __tablename__ = "study_materials"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
+    title: Mapped[str] = mapped_column(String(255), nullable=False)
+    link: Mapped[str] = mapped_column(String(500), nullable=False)
+    category: Mapped[str | None] = mapped_column(String(100), nullable=True)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), server_default=func.now()
+    )
+
+    def __repr__(self) -> str:
+        return f"<StudyMaterial id={self.id} title={self.title!r}>"
+
+
+class StudySession(Base):
+    __tablename__ = "study_sessions"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
+    subject: Mapped[str] = mapped_column(String(255), nullable=False)
+    minutes: Mapped[int] = mapped_column(Integer, nullable=False)
+    date: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), server_default=func.now()
+    )
+
+    def __repr__(self) -> str:
+        return f"<StudySession id={self.id} subject={self.subject!r} duration={self.minutes}m>"

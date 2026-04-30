@@ -7,6 +7,7 @@ import {
   SquareKanban, 
   ShoppingCart, 
   Wallet,
+  GraduationCap,
   Menu,
   X
 } from 'lucide-react';
@@ -18,6 +19,7 @@ const navItems = [
   { name: 'Kanban', path: '/kanban', icon: SquareKanban },
   { name: 'Lista de Compras', path: '/shopping', icon: ShoppingCart },
   { name: 'Financeiro', path: '/finance', icon: Wallet },
+  { name: 'Study Hub', path: '/study', icon: GraduationCap },
 ];
 
 export function Sidebar({ isOpen, setIsOpen }) {

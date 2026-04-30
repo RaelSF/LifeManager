@@ -8,6 +8,7 @@ const routeTitles = {
   '/kanban': 'Quadro Kanban',
   '/shopping': 'Lista de Compras',
   '/finance': 'Controle Financeiro',
+  '/study': 'Study Hub',
 };
 
 export function Topbar({ setSidebarOpen }) {

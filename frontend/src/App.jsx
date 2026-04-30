@@ -6,6 +6,7 @@ import { Notes } from './pages/Notes';
 import { Kanban } from './pages/Kanban';
 import { Shopping } from './pages/Shopping';
 import { Finance } from './pages/Finance';
+import { Study } from './pages/Study';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="kanban" element={<Kanban />} />
           <Route path="shopping" element={<Shopping />} />
           <Route path="finance" element={<Finance />} />
+          <Route path="study" element={<Study />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -4,7 +4,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.database import Base, engine
-from app.routers import finance_router, kanban_router, note_router, shopping_router
+from app.routers import finance_router, kanban_router, note_router, shopping_router, study_router
 
 
 @asynccontextmanager
@@ -43,3 +43,4 @@ app.include_router(note_router.router, prefix="/api/v1")
 app.include_router(kanban_router.router, prefix="/api/v1")
 app.include_router(finance_router.router, prefix="/api/v1")
 app.include_router(shopping_router.router, prefix="/api/v1")
+app.include_router(study_router.router, prefix="/api/v1")
