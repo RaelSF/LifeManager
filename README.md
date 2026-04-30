@@ -6,7 +6,7 @@ LifeManager é uma aplicação Fullstack desenvolvida para centralizar a gestão
 🛠 Principais Funcionalidades (MVP)
 🛒 Lista de Compras Inteligente: Gestão de itens com valor, quantidade e prioridade. Possui um "gatilho de automação" que, ao marcar um item como comprado, registra o gasto automaticamente no módulo financeiro.
 
-📊 Controle Financeiro: Monitoramento de fluxo de caixa (receitas e despesas) integrado às outras áreas do app.<img width="1352" height="684" alt="Captura de tela 2026-04-30 115810" src="https://github.com/user-attachments/assets/ec1e94e5-28ec-46bb-b18c-b40682fe4db1" />
+📊 Controle Financeiro: Monitoramento de fluxo de caixa (receitas e despesas) integrado às outras áreas do app.
 
 
 📋 Quadro Kanban High-Tech: Gerenciador de tarefas com sistema Drag and Drop (arrastar e soltar) fluido, utilizando animações de alta performance com Framer Motion.
@@ -22,4 +22,4 @@ Backend: Python (FastAPI), SQLAlchemy.
 
 Banco de Dados: SQLite (pela agilidade e portabilidade).
 
-Automação de Desenvolvimento: Antigravity Kit (AI-driven workflow).
+<img width="1352" height="684" alt="Captura de tela 2026-04-30 115810" src="https://github.com/user-attachments/assets/ec1e94e5-28ec-46bb-b18c-b40682fe4db1" />
